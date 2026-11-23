@@ -1,0 +1,23 @@
+.bar {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(10px, 2vw, 20px);
+  padding: 6px clamp(14px, 3vw, 28px);
+  background: var(--color-bg);
+  border: var(--border-brand);
+  box-shadow: var(--glow-brand);
+}
+
+.word {
+  font-family: var(--font-display);
+  font-size: var(--size-heading);
+  line-height: 1;
+  color: var(--color-text);
+}
+
+.day {
+  font-family: var(--font-display);
+  font-size: var(--size-date-number);
+  line-height: 1;
+  color: var(--color-brand);
+}

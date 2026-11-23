@@ -1,0 +1,22 @@
+.field {
+  display: grid;
+  gap: 6px;
+  max-width: 520px;
+  margin-bottom: 24px;
+}
+
+.label {
+  font-family: var(--font-strong);
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.select {
+  min-height: 48px;
+  padding: 10px 12px;
+  background: var(--color-bg);
+  border: var(--border-brand);
+  color: var(--color-text);
+  font: inherit;
+}

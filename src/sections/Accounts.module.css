@@ -1,0 +1,90 @@
+.list {
+  display: grid;
+  gap: 14px;
+}
+
+.details {
+  background: var(--color-surface);
+  border: var(--border-brand-thin);
+}
+
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 16px;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.title {
+  font-family: var(--font-subtitle);
+  font-size: clamp(26px, 4vw, 36px);
+  line-height: 1;
+}
+
+.date {
+  color: var(--color-text-muted);
+  font-size: 15px;
+}
+
+/* En móvil, el scroll horizontal es de la tabla, nunca de la página */
+.scroll {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px 16px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.table thead th {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: var(--color-bg);
+  border-bottom: var(--border-brand);
+}
+
+.table tbody tr:nth-child(even) {
+  background: var(--color-bg);
+}
+
+.groupRow th {
+  padding-top: 18px;
+  font-family: var(--font-strong);
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-brand);
+}
+
+.subtotal th,
+.subtotal td {
+  font-weight: 700;
+  border-top: 1px solid var(--color-text-muted);
+}
+
+.table tfoot th,
+.table tfoot td {
+  font-family: var(--font-strong);
+  font-weight: 400;
+  text-transform: uppercase;
+  border-top: var(--border-brand);
+}
+
+.table .amount {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}

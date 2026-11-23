@@ -1,0 +1,53 @@
+.card {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+  padding: 20px;
+  background: var(--color-surface);
+  border: var(--border-brand-thin);
+  clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, var(--cut) 100%, 0 calc(100% - var(--cut)));
+}
+
+.finished {
+  border-color: var(--color-text-muted);
+}
+
+.date {
+  justify-self: start;
+}
+
+.title {
+  font-family: var(--font-subtitle);
+  font-size: var(--size-subtitle);
+  color: var(--color-text);
+}
+
+.when {
+  margin: -6px 0 0;
+  color: var(--color-text-muted);
+}
+
+.venue {
+  display: grid;
+  margin: 0;
+  font-family: var(--font-strong);
+  font-size: var(--size-strong);
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+
+.address {
+  font-family: var(--font-body);
+  font-size: 15px;
+  text-transform: none;
+  color: var(--color-text-muted);
+}
+
+.actions {
+  margin-top: 6px;
+}
+
+.note {
+  margin: 0;
+  color: var(--color-text-muted);
+}

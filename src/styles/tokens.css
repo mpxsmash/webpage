@@ -1,0 +1,31 @@
+:root {
+  --color-bg: #000000; /* fondo general */
+  --color-surface: #111111; /* tarjetas y secciones */
+  --color-brand: #7dff00; /* títulos, bordes, enlaces, número de fecha */
+  --color-action: #ffc700; /* cajas de precio, botón Inscríbete, barras de progreso */
+  --color-text: #ffffff; /* texto principal */
+  --color-text-muted: #b3b3b3; /* fechas pequeñas, notas */
+  /* TODO: --color-energy: rojo del fondo del flyer, código pendiente. Solo fondos y destellos, nunca texto. */
+
+  --font-display: "Anton", Impact, sans-serif;
+  --font-subtitle: "Bebas Neue", Impact, sans-serif;
+  --font-strong: "Archivo Black", "Arial Black", sans-serif;
+  --font-body: "Montserrat", system-ui, sans-serif;
+
+  --size-hero: clamp(56px, 10vw, 110px);
+  --size-subtitle: clamp(36px, 6vw, 62px);
+  --size-date-number: clamp(56px, 8vw, 90px);
+  --size-heading: clamp(28px, 4vw, 40px);
+  --size-strong: clamp(18px, 2.5vw, 28px);
+  --size-body: clamp(16px, 1.2vw + 12px, 18px);
+
+  --border-brand: 2px solid var(--color-brand);
+  --border-brand-thin: 1px solid var(--color-brand);
+  --glow-brand: 0 0 12px rgb(125 255 0 / 45%);
+  --glow-brand-strong: 0 0 18px rgb(125 255 0 / 75%);
+  --cut: 14px; /* tamaño del corte diagonal de esquinas */
+
+  --header-height: 64px;
+  --content-width: 1120px;
+  --space-section: clamp(56px, 9vw, 112px);
+}

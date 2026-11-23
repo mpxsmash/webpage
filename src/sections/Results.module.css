@@ -1,0 +1,35 @@
+.graphics {
+  display: grid;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 760px) {
+  .graphics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.figure {
+  margin: 0;
+  border: var(--border-brand-thin);
+  background: var(--color-surface);
+}
+
+.figure img {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  padding: 8px 12px;
+  font-family: var(--font-strong);
+  text-transform: uppercase;
+  color: var(--color-brand);
+}
+
+.startgg {
+  margin-top: 24px;
+}

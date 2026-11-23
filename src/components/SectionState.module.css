@@ -1,0 +1,7 @@
+.message {
+  margin: 0;
+  padding: 24px;
+  border: var(--border-brand-thin);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+}

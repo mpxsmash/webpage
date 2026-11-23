@@ -1,0 +1,32 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 12px 24px;
+  font-family: var(--font-strong);
+  font-size: var(--size-strong);
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.1;
+  clip-path: polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut));
+  transition: box-shadow 150ms ease, filter 150ms ease;
+}
+
+.primary {
+  background: var(--color-action);
+  color: var(--color-bg);
+}
+
+.secondary {
+  background: var(--color-bg);
+  color: var(--color-brand);
+  border: var(--border-brand);
+}
+
+/* clip-path recorta box-shadow, así que el resplandor va con drop-shadow */
+.link:hover,
+.link:focus-visible {
+  filter: drop-shadow(0 0 10px var(--color-brand));
+}
